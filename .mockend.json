@@ -31,7 +31,7 @@
              
           }
        },
-       "address": {
+       "userAddress": {
            "hasMany": "Address"
        }
     },
@@ -50,7 +50,8 @@
               "min":5,
               "max":5
            }
-        }
+        },
+        "belongsTo": "User"
      }
 
  }
