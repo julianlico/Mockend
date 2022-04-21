@@ -1,24 +1,14 @@
 {
-   "User":{
-      
-   },
-   "Post":{
-      "userComments":{
-         "hasMany":"Comment"
-      }
-   },
-   "Comment":{
-      "name":{
-         "string":[
-            "Thor",
-            "Loki"
-         ]
-      }
-   },
-   "Person":{
-      
-   },
-   "City":{
-      
-   }
+  "Post": {
+    "title": { "string": {} },
+    "comments": {
+      "hasMany": "Comment"
+    }
+  },
+  "Comment": {
+    "body": { "string": {} },
+    "post": {
+      "belongsTo": "Post"
+    }
+  }
 }
