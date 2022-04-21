@@ -49,7 +49,7 @@
            }
         },
         "userAddress": {
-           "belongsTo": "Address"
+           "belongsTo": "User"
        }
      }
 
