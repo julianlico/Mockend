@@ -30,9 +30,6 @@
           "boolean":{
              
           }
-       },
-       "userAddress": {
-           "belongsTo": "Address"
        }
     },
     "Address":{
@@ -50,7 +47,10 @@
               "min":5,
               "max":5
            }
-        }
+        },
+        "userAddress": {
+           "belongsTo": "Address"
+       }
      }
 
  }
