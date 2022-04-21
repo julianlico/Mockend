@@ -30,7 +30,10 @@
           "boolean":{
              
           }
-       }
+       },
+        "userComments": {
+      "hasMany": "Address"
+    }
     },
     "Address":{
         "street":{
@@ -48,9 +51,9 @@
               "max":5
            }
         },
-        "userAddress": {
-           "belongsTo": "User"
-       }
+        "authorPost": {
+      "belongsTo": "User"
+    }
      }
 
  }
